@@ -1,0 +1,3 @@
+  elif choice == "3":
+            if not tasks:
+                print("No tasks to remove.")
