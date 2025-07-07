@@ -26,3 +26,9 @@ def show_menu():
     print("4. Mark task as completed")
     print("5. Search task")
     print("6. Exit")
+def main():
+    tasks = load_tasks()
+
+    while True:
+        show_menu()
+        choice = input("Enter your choice (1-6): ")
