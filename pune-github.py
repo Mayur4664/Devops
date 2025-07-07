@@ -42,3 +42,10 @@ def main():
                 for i, task in enumerate(tasks, 1):
                     status = "✅" if task.endswith("[Done]") else "⏳"
                     print(f"{i}. {task.replace(' [Done]', '')} [{status}]")
+
+ elif choice == "2":
+            task = input("Enter new task: ")
+            tasks.append(task)
+            save_tasks(tasks)
+            print("Task added!")
+
