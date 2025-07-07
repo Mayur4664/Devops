@@ -32,3 +32,13 @@ def main():
     while True:
         show_menu()
         choice = input("Enter your choice (1-6): ")
+
+
+ if choice == "1":
+            if not tasks:
+                print("No tasks found.")
+            else:
+                print("\nYour Tasks:")
+                for i, task in enumerate(tasks, 1):
+                    status = "✅" if task.endswith("[Done]") else "⏳"
+                    print(f"{i}. {task.replace(' [Done]', '')} [{status}]")
