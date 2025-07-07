@@ -17,3 +17,12 @@ def save_tasks(tasks):
         for task in tasks:
             file.write(task + "\n")
 
+# Display menu
+def show_menu():
+    print("\n===== To-Do List App =====")
+    print("1. View tasks")
+    print("2. Add task")
+    print("3. Remove task")
+    print("4. Mark task as completed")
+    print("5. Search task")
+    print("6. Exit")
