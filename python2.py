@@ -4,3 +4,5 @@
             save_tasks(tasks)
             print("Task added!")
 
+this is line1
+this is line2
